@@ -1,5 +1,13 @@
 body{
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Coming Soon';
+  
+  background-image: url(background.jpg);
+  background-size: 70%;
+  background-position: center;
+  /* width: 100%;
+  height: 100%; */
+  background-color: #b6f5f5;
+
   
   /* background-color: white; */
 }  
@@ -9,19 +17,75 @@ img.logo{
   width: 30%;
   margin-top: 20px;
   margin-left: auto;
-  margin-right: auto
+  margin-right: auto;
+  margin-bottom: 20px;
 }
+
+.homebutton:hover{
+  background-color:black;
+  color: white;
+}
+
+.zoom:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.zoom {
+  padding: 40px;
+  transition: transform .2s; /* Animation */
+ 
+  margin: 0 auto;
+}
+
+.homebutton{
+  text-align: center;
+  padding: 20px;
+  margin: 15px;
+  font-size: 1.5em;
+  border: 2px black solid;
+  background-color:rgba(255,255,255, 0.8);
+  color: black;
+ 
+
+
+}
+
+
 
 div.home {
   text-align: center;
   padding: 20px;
-  margin: 15px;
-  background-color: rgb(166, 245, 218);
+  margin: 20px;
+  background-color:rgba(255,255,255, 0.8);
+  border: 2px black solid;
+  border-radius: 5px;
+  
+ 
+}
+
+div.homecontent {
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+ 
+
+  /* background-color: rgb(247, 196, 244); */
  
 }
 
 
 .heading{
+  padding: 15px;
   text-align: center;
+  line-height: 1.5;
+  font-size: 2em;
+}
+
+.heading1{
+  
+  text-align: center;
+  line-height: 1.5;
+  font-size: 1.5em;
+
   
 }
