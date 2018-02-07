@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 <!-- custom css -->
 <link rel="stylesheet" type="text/css" href="css/main.css" />
+<link href="https://fonts.googleapis.com/css?family=Coming+Soon" rel="stylesheet">
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   
@@ -19,13 +20,38 @@
 <body>
 <div class="container">
   <div class="col-md-12">
-   <a href="#"><img class="img-responsive logo" src="css/logo.png"></a>
+   <a href="index.html"><img class="img-responsive logo" src="css/logo2.png"></a>
   </div>
 <div class="col-md-12 home">
-<h1 class="heading">DIV 1 WORKS</h1>
-<h2 class="heading">ABOUT</h2>
-<p>ABOUT</p>
+<h1 class="heading">First, we need to know a few things:</h1>
+<form method="POST" action="quiz.html" class="form">
+<p class="formtext">Name:</p>
+  <input type="text" name="name">
+</br>
+</br><p class="formtext">NCEA Level:</p>
+  <select>
+      <option value="-"></option>
+      <option value="1">Level 1</option>
+      <option value="2">Level 2</option>
+      <option value="3">Level 3</option>
+  </select>
+</br>
+</br><p class="formtext">Subject:</p>
+<select>
+    <option value="-"></option>
+    <option value="english">English</option>
+    <option value="maths">Maths</option>
+    <option value="science">Science</option>
+</select>
+<!-- button??? -->
+</form>
+
 </div>
+<div class="col-md-12 homecontent">
+    <!-- can i use this to submit my form? -->
+    <a href="quiz.html" role="button" class="homebutton zoom btn">Take Quiz</a>
+    
+    </div>
 
 
 </div>
