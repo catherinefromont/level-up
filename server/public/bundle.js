@@ -18285,9 +18285,46 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var App = function App() {
   return _react2.default.createElement(
-    'h1',
-    null,
-    'React development has begun!'
+    "div",
+    { className: "container" },
+    _react2.default.createElement(
+      "div",
+      { className: "col-md-12" },
+      _react2.default.createElement(
+        "a",
+        { href: "#" },
+        _react2.default.createElement("img", { className: "img-responsive logo", src: "css/logo2.png" })
+      )
+    ),
+    _react2.default.createElement(
+      "div",
+      { className: "col-md-12 home" },
+      _react2.default.createElement(
+        "p",
+        { className: "heading" },
+        "Studying for NCEA Exams? Over writing notes and reading textbooks?"
+      ),
+      _react2.default.createElement("br", null),
+      _react2.default.createElement(
+        "p",
+        { className: "heading" },
+        "Level Up is an academic platform targeted at students who are studying for NCEA examinations. It is a place that students can come for a more interesting experience of studying."
+      ),
+      _react2.default.createElement(
+        "p",
+        { className: "heading" },
+        "By making study more interactive and hands-on, it tends to make us want to do more. Ultimately, Level Up will be able to do this for students and help them get the results they are looking for."
+      )
+    ),
+    _react2.default.createElement(
+      "div",
+      { className: "col-md-12 homecontent" },
+      _react2.default.createElement(
+        "a",
+        { href: "about.html", role: "button", className: "homebutton zoom btn" },
+        "Get Studying"
+      )
+    )
   );
 };
 
