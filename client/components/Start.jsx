@@ -7,11 +7,11 @@ class Start extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      name: [],
-      level: [],
-      subject: []
+      name: '',
+      level: '',
+      subject: ''
     }
-    //this.onChange = this.onChange.bind(this)
+    // this.onChange = this.onChange.bind(this)
   }
 
   // onChange () {
