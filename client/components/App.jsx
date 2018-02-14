@@ -5,16 +5,36 @@ import Home from './Home'
 import Start from './Start'
 import Quiz from './Quiz'
 
-const App = () => {
-  return (
-    <Router>
-      <div>
-        <Route exact path='/' component={Home} />
-        <Route path='/start' component={Start} />
-        <Route path='/start/quiz' component={Quiz} />
-      </div>
-    </Router>
-  )
+class App extends React.Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      name: '',
+      level: '',
+      subject: ''
+    }
+    this.getUserData = this.getUserData.bind(this)
+  }
+
+  getUserData () {
+    this.setState({
+      name: '',
+      level: '',
+      subject: ''
+    })
+  }
+
+  render () {
+    return (
+      <Router>
+        <div>
+          <Route exact path='/' component={Home} />
+          <Route exact path='/start' render={() => <Start getUserData={this.getUserData} />} />
+          <Route path='/start/quiz' component={Quiz} />
+        </div>
+      </Router>
+    )
+  }
 }
 
 export default App
