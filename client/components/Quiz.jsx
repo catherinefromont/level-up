@@ -1,5 +1,8 @@
 import React from 'react'
-// import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
+
+import Correct from './Correct'
+import Incorrect from './Incorrect'
 
 class Quiz extends React.Component {
   constructor (props) {
@@ -16,13 +19,13 @@ class Quiz extends React.Component {
           <a href="index.html"><img className="img-responsive logo" src="css/logo2.png"></img></a>
         </div>
         <div className="col-md-12 quiz">
-          <h1 className="heading">{'level'}{'subject'}</h1>
-          <h1 className="heading">{'level'}{'subject'}{'question'}</h1>
+          <h1 className="heading">*Level* *Subject*</h1>
+          <h1 className="heading">*Level* *Subject* *Question*</h1>
           <div className="buttons">
-            <a href="correct.html" role="button" className="quizbutton btn">Testing to see width of button</a>
-            <a href="incorrect.html" role="button" className="quizbutton btn">Answer 2</a>
-            <a href="incorrect.html" role="button" className="quizbutton btn">Answer 3</a>
-            <a href="incorrect.html" role="button" className="quizbutton btn">Answer 4</a>
+            <div className="col-md-12 buttondiv"><Link to='/start/quiz/correct' component={Correct} className="quizbutton zoom btn">Answer 1</Link></div>
+            <div className="col-md-12 buttondiv"><Link to='/start/quiz/incorrect' component={Incorrect} className="quizbutton zoom btn">Answer 2</Link></div>
+            <div className="col-md-12 buttondiv"><Link to='/start/quiz/incorrect' component={Incorrect} className="quizbutton zoom btn">Answer 3</Link></div>
+            <div className="col-md-12 buttondiv"><Link to='/start/quiz/incorrect' component={Incorrect} className="quizbutton zoom btn">Answer 4</Link></div>
           </div>
         </div>
       </div>

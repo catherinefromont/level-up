@@ -55,7 +55,8 @@ img.logo{
 
 div.buttons{
   margin-bottom: 20px;
-  flex-direction: column;
+  text-align: center;
+  
 }
 
 .homebutton{
